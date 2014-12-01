@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/squid_banner"
+            android:layout_height="30pt"
+            android:layout_width="fill_parent"
+            android:clickable="false"
+            android:src="@drawable/banniere_logo"
+            android:layout_gravity="center_horizontal"
+            android:background="#0C4D99"/>
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_height="20pt"
+            android:layout_width="fill_parent"
+            android:textColor="#0C4D99"
+            android:layout_gravity="center_horizontal"
+            android:text="Create Account"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ca_fname_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Firstname ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_fname"
+            android:layout_height="wrap_content"
+            android:hint="firstname"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/ca_lname_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Lastname ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_lname"
+            android:layout_height="wrap_content"
+            android:hint="lastname"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/ca_email_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Email ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_email"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/ca_phone_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Phone ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_phone"
+            android:layout_height="wrap_content"
+            android:hint="phone number"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+		<TextView
+            android:id="@+id/ca_lang_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Language ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_lang"
+            android:layout_height="wrap_content"
+            android:hint="language"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/ca_login_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Login ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_login"
+            android:layout_height="wrap_content"
+            android:hint="login"
+            android:inputType="text"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/ca_passwd_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="15pt"
+            android:text="Password ?"
+            android:textColor="#0C4D99"
+            android:textStyle="normal"
+            android:textSize="10pt"
+            android:layout_marginTop="5pt"/>
+
+        <EditText
+            android:id="@+id/ca_passwd"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <RelativeLayout
+            android:layout_height="25pt"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20pt">
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_height="20pt"
+                android:layout_width="40pt"
+                android:text="Send"
+                android:textSize="9pt"
+                android:clickable="true"
+                android:textStyle="italic"
+                android:textColor="#0C4D99"
+                android:onClick=""/>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_height="20pt"
+                android:layout_width="40pt"
+                android:text="Cancel"
+                android:textSize="9pt"
+                android:textStyle="italic"
+                android:textColor="#0C4D99"
+                android:layout_toRightOf="@+id/send_btn"
+                android:onClick=""/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

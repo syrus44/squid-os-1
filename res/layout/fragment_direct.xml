@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/squid_banner"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:clickable="false"
+        android:src="@drawable/banniere_logo"
+        android:layout_gravity="center_horizontal"
+        android:background="#0C4D99"/>
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:textColor="#0C4D99"
+        android:layout_gravity="center_horizontal"
+        android:text="Direct View Menu"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/squid_banner"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:clickable="false"
+        android:src="@drawable/banniere_logo"
+        android:layout_gravity="center_horizontal"
+        android:background="#0C4D99"/>
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:textColor="#0C4D99"
+        android:layout_gravity="center_horizontal"
+        android:text="Account Menu"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_firstname"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20pt">
+
+        <TextView
+            android:id="@+id/user_firstname"
+            android:layout_height="fill_parent"
+            android:layout_width="70pt"
+            android:text="First Name"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/firstname_field"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:text=""
+            android:layout_toRightOf="@id/user_firstname"
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:clickable="false"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lastname"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5pt">
+
+        <TextView
+            android:id="@+id/user_lastname"
+            android:layout_height="fill_parent"
+            android:layout_width="70pt"
+            android:text="Last Name"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/lastname_field"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:text=""
+            android:layout_toRightOf="@id/user_lastname"
+            android:textStyle="bold"
+            android:textSize="11pt"
+            android:clickable="false"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text="Email"
+        android:textSize="11pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="5pt"/>
+
+    <TextView
+        android:id="@+id/email_field"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text=""
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:textAlignment="textEnd"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/user_date"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text="Registration Date"
+        android:textSize="12pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="5pt"/>
+
+    <TextView
+        android:id="@+id/date_field"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text=""
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:textAlignment="textEnd"
+        android:clickable="false"/>
+
+        <RelativeLayout
+            android:layout_height="25pt"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20pt">
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_height="20pt"
+                android:layout_width="65pt"
+                android:text="Edit Account"
+                android:textSize="9pt"
+                android:clickable="true"
+                android:textStyle="italic"
+                android:textColor="#0C4D99"
+                android:onClick="editAccount"/>
+
+            <Button
+                android:id="@+id/close_btn"
+                android:layout_height="20pt"
+                android:layout_width="80pt"
+                android:text="Delete Account"
+                android:textSize="9pt"
+                android:textStyle="italic"
+                android:textColor="#0C4D99"
+                android:layout_toRightOf="@+id/edit_btn"
+                android:onClick="deleteAccount"/>
+
+            </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

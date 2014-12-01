@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/theImage"
+        android:layout_width="fill_parent"
+        android:background="#0C4D99"
+        android:layout_height="30pt"
+        android:src="@drawable/banniere_logo" />
+
+    <TextView
+        android:layout_height="50pt"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10pt"
+        android:text="Welcome to SquidOS"
+        android:gravity="center"
+        android:textSize="16pt"
+        android:textColor="#0C4D99"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10pt"
+        android:text="Please log in to start ..."
+        android:textColor="#0C4D99"
+        android:textStyle="normal"
+        android:textSize="12pt"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25pt"
+            android:gravity="center_vertical"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/squidlog"
+                android:layout_height="wrap_content"
+                android:hint="login"
+                android:inputType="textPersonName"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <EditText
+                android:id="@+id/squidpass"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_width="fill_parent"
+                android:text="Connect"
+                android:textStyle="italic"
+                android:textColor="#0C4D99"
+                android:textSize="11pt"
+                android:onClick="dataBaseConnect"
+                android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="50pt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20pt">
+
+        <TextView
+            android:id="@+id/new_usr_txt"
+            android:layout_height="20pt"
+            android:layout_width="fill_parent"
+            android:text="New User ?"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:textColor="#0C4D99"/>
+
+        <Button
+            android:id="@+id/new_user_btn"
+            android:layout_height="25pt"
+            android:layout_width="110pt"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:text="Create Account"
+            android:textSize="11pt"
+            android:textStyle="italic"
+            android:textColor="#0C4D99"
+            android:onClick="createAccount"/>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:text="Follow SquidOS on Facebook and Twitter !"
+        android:textColor="#0C4D99"
+        android:textSize="11pt"
+        android:textStyle="normal"
+        android:layout_marginTop="20pt"/>
+
+    <LinearLayout
+        android:layout_height="20pt"
+        android:layout_width="match_parent"
+        android:gravity="bottom|left"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_marginTop="3pt">
+        
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="20pt"
+            android:layout_marginLeft="5pt"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/fb"
+            android:onClick="launchFacebook"
+        />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="20pt"
+            android:layout_marginLeft="3pt"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/twitter"
+            android:onClick="launchTwitter"
+            android:id="@+id/twitterButton"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

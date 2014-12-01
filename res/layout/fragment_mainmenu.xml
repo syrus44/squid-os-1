@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu$PlaceholderFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <ImageView
+       android:id="@+id/squid_banner"
+       android:layout_height="30pt"
+       android:layout_width="fill_parent"
+       android:clickable="false"
+       android:src="@drawable/banniere_logo"
+       android:layout_gravity="center_horizontal"
+       android:background="#0C4D99"/>
+
+   <TextView
+       android:id="@+id/menu_title"
+       android:layout_height="20pt"
+       android:layout_width="150pt"
+       android:textColor="#0C4D99"
+       android:layout_gravity="center_horizontal"
+       android:text="Main Menu"
+       android:textSize="14pt"
+       android:textStyle="bold"
+       android:gravity="center"/>
+
+    <Button
+        android:id="@+id/vm_status"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:text="VM Status"
+        android:gravity="center"
+        android:textSize="13pt"
+        android:textStyle="italic"
+        android:textColor="#0C4D99"
+        android:clickable="true"
+        android:layout_marginTop="30pt"/>
+
+    <Button
+        android:id="@+id/direct_view"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:text="Direct View"
+        android:gravity="center"
+        android:textSize="13pt"
+        android:textStyle="italic"
+        android:textColor="#0C4D99"
+        android:clickable="true"
+        android:layout_marginTop="20pt"/>
+
+    <Button
+        android:id="@+id/thumb_view"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:text="Thumbnail View"
+        android:gravity="center"
+        android:textSize="13pt"
+        android:textStyle="italic"
+        android:textColor="#0C4D99"
+        android:clickable="true"
+        android:layout_marginTop="20pt"/>
+
+    <Button
+        android:id="@+id/account"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:text="Account Details"
+        android:gravity="center"
+        android:textSize="13pt"
+        android:textStyle="italic"
+        android:textColor="#0C4D99"
+        android:clickable="true"
+        android:layout_marginTop="20pt"/>
+
+    <RelativeLayout
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20pt">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_height="20pt"
+            android:layout_width="55pt"
+            android:text="Username : "
+            android:textSize="10pt"
+            android:clickable="false"
+            android:textColor="#0C4D99"/>
+
+        <TextView
+            android:id="@+id/user_field"
+            android:layout_height="20pt"
+            android:layout_width="fill_parent"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/username"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <Button
+            android:id="@+id/disconnect_btn"
+            android:layout_height="30pt"
+            android:layout_width="100pt"
+            android:text="Disconnect"
+            android:textSize="12pt"
+            android:clickable="true"
+            android:textStyle="italic"
+            android:textColor="#0C4D99"
+            android:layout_marginLeft="85pt"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

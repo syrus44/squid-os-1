@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SquidOS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_account">AccountView</string>
+    <string name="title_activity_dview">DirectView</string>
+    <string name="title_activity_tview">ThumbView</string>
+    <string name="title_activity_vm">VMStatus</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_editinfos">Edit Infos</string>
+	<string name="title_activity_createaccount">Create Account</string>
+
+</resources>

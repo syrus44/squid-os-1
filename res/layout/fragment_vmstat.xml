@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/squid_banner"
+        android:layout_height="30pt"
+        android:layout_width="fill_parent"
+        android:clickable="false"
+        android:src="@drawable/banniere_logo"
+        android:layout_gravity="center_horizontal"
+        android:background="#0C4D99"/>
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:textColor="#0C4D99"
+        android:layout_gravity="center_horizontal"
+        android:text="VM Status Menu"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_on_off"
+        android:layout_height="25pt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15pt">
+
+        <TextView
+            android:id="@+id/on_off_txt"
+            android:layout_height="fill_parent"
+            android:layout_width="70pt"
+            android:textSize="12pt"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:text="VM Status"
+            android:layout_alignParentLeft="true"/>
+
+        <ToggleButton
+            android:id="@+id/on_off_btn"
+            android:layout_height="fill_parent"
+            android:layout_width="70pt"
+            android:layout_centerHorizontal="true"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/on_off"
+            android:layout_toRightOf="@+id/on_off_txt"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vm_status"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:textSize="12pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="10pt"/>
+
+    <TextView
+        android:id="@+id/os_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text="Operating System"
+        android:textSize="11pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="10pt"/>
+
+    <TextView
+        android:id="@+id/os_name"
+         android:layout_height="20pt"
+         android:layout_width="fill_parent"
+         android:text=""
+         android:layout_gravity="right"
+         android:textStyle="bold"
+         android:textSize="11pt"
+         android:textAlignment="textEnd"
+         android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/size_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text="Max HDD Size"
+        android:textSize="11pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="15pt"/>
+
+    <TextView
+        android:id="@+id/size_name"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text=""
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:textAlignment="textEnd"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/size2_title"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text="Current Size"
+        android:textSize="12pt"
+        android:textStyle="normal"
+        android:clickable="false"
+        android:layout_marginTop="15pt"/>
+
+    <TextView
+        android:id="@+id/size2_name"
+        android:layout_height="20pt"
+        android:layout_width="fill_parent"
+        android:text=""
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:textSize="12pt"
+        android:textAlignment="textEnd"
+        android:clickable="false"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".VM" >
+    
+    <item android:id="@+id/about"
+        android:title="About SquidOS"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
